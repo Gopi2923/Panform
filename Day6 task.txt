@@ -1,0 +1,60 @@
+//1. Error was due to quotes not applied. Corrected the same
+//=======================================================
+<!DOCTYPE html>
+<html>
+
+<body>
+    <script>
+        alert("I’m JavaScript!");
+    </script>
+    Whats the error in this ?
+</body>
+
+</html>
+
+//2. Error in quotes and name of the script (script.js -> scripts.js. Corrected the same
+//=========================================================
+<!DOCTYPE html>
+<html>
+
+<body>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
+
+//3. Explain how below sequence of alerts work
+//=============================================
+//script.js
+//Below are observations:
+//All alerts work. Only issue is string "World" split into 2 lines which effects user experience
+//Without semicolon also java script code works
+//Addition of number in multiple lines work properly. It only impacts the code readability but not functionality
+alert("I'm JavaScript!");
+alert('Hello') // this line is not having semicolon
+alert(`Wor
+ ld`)
+alert(3 +
+    1
+    + 2); // this is multiple line code and its working
+
+//4. Fix below
+//=============
+//script.js
+//Fix: Space added between two words
+let admin = 9, fname = 10.5;
+fname = "Guvi";
+lname = "geek"
+admin = fname + " " + lname;
+alert(admin); // "Guvi geek"
+
+//5. Fix below
+//==============
+//script.js
+//Fix: Space added between two words and Template literal added in the alert block replacing the single quotes
+let fname = 10.5;
+fname = "Guvi";
+lname = "geek"
+let name = fname + " " + lname;
+alert(`hello ${name}`);
+
